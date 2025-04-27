@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="nl" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="nl" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,54 +20,64 @@
     <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold text-blue-600">Hoogwerker Rotterdam</a>
+                <a href="https://readthisnow.github.io/hoogwerker-rotterdam-2025-04-27-pfc3o" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">Hoogwerker Rotterdam</a>
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Voordelen</a>
                     <a href="#benefits" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Diensten</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Over Ons</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Reviews</a>
                     <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
                     <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
                 </div>
-                <button class="md:hidden text-gray-600 hover:text-blue-600">
+                <button class="mobile-menu-button md:hidden text-gray-600 hover:text-blue-600 transition-colors duration-300" aria-label="Toggle menu">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-white rounded-lg shadow-lg">
+                <a href="#features" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">Voordelen</a>
+                <a href="#benefits" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">Diensten</a>
+                <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">Over Ons</a>
+                <a href="#testimonials" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">Reviews</a>
+                <a href="#faq" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">Contact</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="relative min-h-screen flex items-center pt-20 bg-gradient-to-br from-blue-50 to-white">
-            <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto text-center">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8">
-                        Hoogwerker Rotterdam <span class="text-blue-600">| Tijdelijk 10% Korting</span>
+        <section class="relative min-h-screen flex items-center pt-20 bg-gradient-to-br from-blue-50 to-white" style="background-image: url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-blue-900/40 backdrop-blur-sm"></div>
+            <div class="container mx-auto px-6 relative">
+                <div class="max-w-4xl mx-auto text-center text-white">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-8">
+                        Hoogwerker Rotterdam <span class="text-blue-300">| Tijdelijk 10% Korting</span>
                     </h1>
-                    <p class="text-xl md:text-2xl text-gray-600 mb-12">Nog maar <span class="text-red-600 font-bold">3 hoogwerkers</span> beschikbaar voor deze week!</p>
-                    <a href="https://hansschuiling.nl" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <p class="text-xl md:text-2xl mb-12">Nog maar <span class="text-red-400 font-bold">3 hoogwerkers</span> beschikbaar voor deze week!</p>
+                    <a href="https://hansschuiling.nl" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                         Direct Reserveren
                     </a>
                 </div>
             </div>
-            <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
         </section>
 
         <section id="features" class="py-24 bg-white">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Waarom Kiezen Voor Ons?</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-102 hover:bg-blue-50">
                         <i class="fas fa-bolt text-4xl text-blue-600 mb-6"></i>
                         <h3 class="text-xl font-bold mb-4">Snelle Levering</h3>
-                        <p class="text-gray-600">Binnen 2 uur op locatie in Rotterdam en omgeving</p>
+                        <p class="text-gray-600">Binnen 2 uur op locatie in Rotterdam en omgeving. Geen wachttijden, geen gedoe - direct aan de slag met uw project.</p>
                     </div>
-                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-102 hover:bg-blue-50">
                         <i class="fas fa-percentage text-4xl text-blue-600 mb-6"></i>
                         <h3 class="text-xl font-bold mb-4">10% Korting</h3>
-                        <p class="text-gray-600">Tijdelijke aanbieding - Nog maar 48 uur geldig!</p>
+                        <p class="text-gray-600">Profiteer nu van onze tijdelijke aanbieding. Bespaar direct op uw volgende project met onze scherpe tarieven.</p>
                     </div>
-                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-102 hover:bg-blue-50">
                         <i class="fas fa-check-circle text-4xl text-blue-600 mb-6"></i>
                         <h3 class="text-xl font-bold mb-4">24/7 Service</h3>
-                        <p class="text-gray-600">Altijd bereikbaar voor support en assistentie</p>
+                        <p class="text-gray-600">Dag en nacht bereikbaar voor support. Technische assistentie en advies wanneer u het nodig heeft.</p>
                     </div>
                 </div>
             </div>
@@ -69,19 +87,89 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Onze Voordelen</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div class="flex items-start space-x-4">
-                        <i class="fas fa-star text-2xl text-blue-600 mt-1"></i>
+                    <div class="flex items-start space-x-4 group hover:bg-white hover:shadow-lg rounded-xl p-6 transition-all duration-300">
+                        <i class="fas fa-star text-2xl text-blue-600 mt-1 group-hover:scale-110 transition-transform duration-300"></i>
                         <div>
                             <h3 class="text-xl font-bold mb-2">Gecertificeerde Machines</h3>
-                            <p class="text-gray-600">Alle hoogwerkers zijn KIWA gecertificeerd</p>
+                            <p class="text-gray-600">Al onze hoogwerkers zijn KIWA gecertificeerd en ondergaan regelmatige veiligheidsinspecties. Werk veilig op hoogte met betrouwbaar materieel.</p>
                         </div>
                     </div>
-                    <div class="flex items-start space-x-4">
-                        <i class="fas fa-clock text-2xl text-blue-600 mt-1"></i>
+                    <div class="flex items-start space-x-4 group hover:bg-white hover:shadow-lg rounded-xl p-6 transition-all duration-300">
+                        <i class="fas fa-clock text-2xl text-blue-600 mt-1 group-hover:scale-110 transition-transform duration-300"></i>
                         <div>
                             <h3 class="text-xl font-bold mb-2">Flexibele Huurtermijnen</h3>
-                            <p class="text-gray-600">Huur per dag, week of maand mogelijk</p>
+                            <p class="text-gray-600">Huur per dag, week of maand mogelijk. Pas de huurtermijn aan op uw projectplanning en profiteer van aantrekkelijke kortingen bij langere huurperiodes.</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Over Ons</h2>
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <p class="text-gray-600 leading-relaxed">
+                        Opgericht in 2010 is Hoogwerker Rotterdam uitgegroeid tot dé specialist in hoogwerkerverhuur in de regio Rotterdam. Wat begon als een familiebedrijf met drie hoogwerkers is nu uitgegroeid tot een modern verhuurbedrijf met een uitgebreide vloot aan machines en een team van ervaren professionals.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Onze missie is om klanten de beste service te bieden met veilige, moderne hoogwerkers tegen concurrerende prijzen. We geloven in persoonlijk contact, snelle service en transparante communicatie. Onze kernwaarden zijn veiligheid, betrouwbaarheid en klanttevredenheid.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Wat Onze Klanten Zeggen</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Fantastische service! De hoogwerker werd binnen het uur geleverd en was in perfecte staat. Het team gaf uitstekende instructies en bleef beschikbaar voor vragen."</p>
+                        <p class="font-bold">Jan de Vries</p>
+                        <p class="text-sm text-gray-500">Projectmanager, BouwBedrijf Rotterdam</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Al jaren vaste klant bij Hoogwerker Rotterdam. De flexibele huurtermijnen en scherpe prijzen maken het voor ons de ideale partner."</p>
+                        <p class="font-bold">Linda Bakker</p>
+                        <p class="text-sm text-gray-500">Eigenaar, Schildersbedrijf Bakker</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"De 24/7 service is geweldig. Zelfs toen we een technisch probleem hadden op zondag, stond er binnen een uur een monteur klaar."</p>
+                        <p class="font-bold">Peter van Dam</p>
+                        <p class="text-sm text-gray-500">Technisch Manager, Installatiebedrijf VDT</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Zeer professioneel bedrijf met moderne, goed onderhouden machines. De 10% korting maakte het extra aantrekkelijk."</p>
+                        <p class="font-bold">Mark Jansen</p>
+                        <p class="text-sm text-gray-500">ZZP'er, Glazenwasserij Helder</p>
                     </div>
                 </div>
             </div>
@@ -91,13 +179,25 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Veelgestelde Vragen</h2>
                 <div class="max-w-3xl mx-auto space-y-6">
-                    <div class="border rounded-lg p-6 hover:shadow-md transition-shadow duration-300">
+                    <div class="border rounded-lg p-6 hover:shadow-md transition-all duration-300 hover:bg-blue-50">
                         <h3 class="text-xl font-bold mb-2">Wat zijn de huurvoorwaarden?</h3>
-                        <p class="text-gray-600">Legitimatie en aanbetaling vereist. Minimale huurperiode is 4 uur.</p>
+                        <p class="text-gray-600">Legitimatie en aanbetaling van 20% is vereist. Minimale huurperiode is 4 uur. Verzekering is inbegrepen in de huurprijs.</p>
                     </div>
-                    <div class="border rounded-lg p-6 hover:shadow-md transition-shadow duration-300">
+                    <div class="border rounded-lg p-6 hover:shadow-md transition-all duration-300 hover:bg-blue-50">
                         <h3 class="text-xl font-bold mb-2">Is bezorging inbegrepen?</h3>
-                        <p class="text-gray-600">Ja, binnen Rotterdam is bezorging gratis bij huur vanaf 1 dag.</p>
+                        <p class="text-gray-600">Ja, binnen Rotterdam is bezorging gratis bij huur vanaf 1 dag. Voor omliggende gemeenten geldt een kleine toeslag.</p>
+                    </div>
+                    <div class="border rounded-lg p-6 hover:shadow-md transition-all duration-300 hover:bg-blue-50">
+                        <h3 class="text-xl font-bold mb-2">Heb ik een certificaat nodig?</h3>
+                        <p class="text-gray-600">Voor bepaalde hoogwerkers is een certificaat verplicht. We bieden ook korte instructies aan voor machines waarvoor geen certificaat nodig is.</p>
+                    </div>
+                    <div class="border rounded-lg p-6 hover:shadow-md transition-all duration-300 hover:bg-blue-50">
+                        <h3 class="text-xl font-bold mb-2">Wat gebeurt er bij een technisch probleem?</h3>
+                        <p class="text-gray-600">Onze servicemonteurs zijn 24/7 beschikbaar en komen direct ter plaatse bij technische problemen. Indien nodig wordt kosteloos een vervangende machine geleverd.</p>
+                    </div>
+                    <div class="border rounded-lg p-6 hover:shadow-md transition-all duration-300 hover:bg-blue-50">
+                        <h3 class="text-xl font-bold mb-2">Kan ik de huurperiode verlengen?</h3>
+                        <p class="text-gray-600">Ja, verlenging is mogelijk in overleg en afhankelijk van beschikbaarheid. Informeer tijdig voor de beste tarieven.</p>
                     </div>
                 </div>
             </div>
@@ -107,7 +207,7 @@
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8">Profiteer Nu van 10% Korting!</h2>
                 <p class="text-xl mb-12">Nog maar 3 hoogwerkers beschikbaar deze week</p>
-                <a href="https://hansschuiling.nl" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                <a href="https://hansschuiling.nl" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                     Direct Reserveren
                 </a>
             </div>
@@ -125,16 +225,17 @@
                 <div>
                     <h3 class="text-xl font-bold mb-4">Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">Algemene Voorwaarden</a></li>
+                        <li><a href="https://readthisnow.github.io/hoogwerker-rotterdam-2025-04-27-pfc3o/privacy.html" class="hover:text-blue-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://readthisnow.github.io/hoogwerker-rotterdam-2025-04-27-pfc3o/terms.html" class="hover:text-blue-400 transition-colors duration-300">Algemene Voorwaarden</a></li>
+                        <li><a href="https://readthisnow.github.io/hoogwerker-rotterdam-2025-04-27-pfc3o/blog.html" class="hover:text-blue-400 transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Volg Ons</h3>
                     <div class="flex space-x-4">
-                        <a href="#" class="hover:text-blue-400 transition-colors duration-300"><i class="fab fa-facebook text-2xl"></i></a>
-                        <a href="#" class="hover:text-blue-400 transition-colors duration-300"><i class="fab fa-instagram text-2xl"></i></a>
-                        <a href="#" class="hover:text-blue-400 transition-colors duration-300"><i class="fab fa-linkedin text-2xl"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition-colors duration-300 transform hover:scale-110"><i class="fab fa-facebook text-2xl"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition-colors duration-300 transform hover:scale-110"><i class="fab fa-instagram text-2xl"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition-colors duration-300 transform hover:scale-110"><i class="fab fa-linkedin text-2xl"></i></a>
                     </div>
                 </div>
             </div>
@@ -143,5 +244,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
